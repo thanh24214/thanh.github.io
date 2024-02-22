@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="klee.jpg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>điền thông tin vào web này</h1>
+    <p style="color: red;" id="errormsg"></p>
+    <form id="thanhtoan" method="post" action="confirm.html">
+    <fieldset>
+        <legend>Name</legend>
+        <p>
+        <label for="firstname">first name</label>
+        <input type="text" id="firstname" name="firstname">
+        </p>
+        <p>
+        <label for="lastname">last name</label>
+        <input type="text" id="lastname" name="lastname">
+        </p>
+        <p>
+        <label for="mail">địa chỉ mail</label>
+        <input type="text" id="mail" name="mail">
+        </p>
+        <p>
+        <label for="sodienthoai">số điện thoại</label>
+        <input type="text" id="sodienthoai" name="sodienthoai">
+        </p>
+    </fieldset>
+    <fieldset id="idnghenghiep">
+        <legend>Nghề nghiệp</legend>
+        <p>
+        <label for="daihoc">đại học</label>
+        <input type="radio" id="daihoc" name="nghenghiep" value="đại học">
+        </p>
+        <p>
+        <label for="trunghoc">trung học</label>
+        <input type="radio" id="trunghoc" name="nghenghiep" value="trung học">
+        </p>
+        <p>
+        <label for="lamviec">làm việc</label>
+        <input type="radio" id="lamviec" name="nghenghiep" value="làm việc">
+        </p>
+        <p>
+        <label for="vehuu">về hưu</label>
+        <input type="radio" id="vehuu" name="nghenghiep" value="về hưu">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Chọn khóa học</legend>
+        <p>
+        <label for="python">python</label>
+        <input type="checkbox" id="python" name="python" value="python"><br/>
+        </p>
+        <p>
+        <label for="java">java</label>
+        <input type="checkbox" id="java" name="java" value="java"><br/>
+        </p>
+        <p>
+        <label for="js">JS</label>
+        <input type="checkbox" id="js" name="js" value="JS"><br/>
+        </p>
+        <p>
+        <label for="sql">SQL</label>
+        <input type="checkbox" id="sql" name="sql" value="SQL"><br/>
+        </p>
+    </fieldset>
+    <br/>
+    <label for="chonthethanhtoan">Chọn thẻ thanh toán</label>
+    <select id="chonthethanhtoan">
+        <option>payal</option>
+        <option>Visa</option>
+    </select>
+    <br/>
+    <input type="submit" value="thanh toán">
+    <input type="reset" value="reset">
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
